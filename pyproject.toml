@@ -1,0 +1,13 @@
+[project]
+name = "rag-chatbot"
+version = "1.0.0"
+description = "Retrieval-augmented chatbot over local documents."
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.pyrefly]
+python-version = "3.11"
+python-interpreter = ".venv/bin/python"
+project-includes = ["app.py", "cli.py", "ragbot", "tests"]
+search-path = ["."]
+project-excludes = [".venv", "data", "**/__pycache__"]

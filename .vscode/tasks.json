@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run chatbot",
+      "type": "shell",
+      "command": "\"${workspaceFolder}/.venv/bin/python\" -m streamlit run app.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Test chatbot",
+      "type": "shell",
+      "command": "\"${workspaceFolder}/.venv/bin/python\" -m unittest discover -s tests -v",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "test"
+    }
+  ]
+}
