@@ -28,7 +28,7 @@ streamlit run app.py
 
 Open the local URL Streamlit prints, usually http://localhost:8501.
 
-In VS Code or Cursor:
+In VS Code:
 
 1. Open this folder.
 2. Select the interpreter `.venv/bin/python` if the editor asks. That path is already set in `.vscode/settings.json`.
